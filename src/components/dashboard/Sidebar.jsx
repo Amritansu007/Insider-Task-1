@@ -1,57 +1,44 @@
-import {
-  LayoutDashboard,
-  ArrowLeftRight,
-  Users,
-  Sparkles
-} from "lucide-react";
+import { LayoutDashboard, ArrowLeftRight, Users, Sparkles } from "lucide-react";
 
 function Sidebar() {
-  const menu = [
-    { name: "Dashboard", icon: LayoutDashboard },
-    { name: "Transactions", icon: ArrowLeftRight },
-    { name: "Contacts", icon: Users },
-    { name: "Features", icon: Sparkles },
-  ];
-
   return (
-    <div className="w-64 bg-zinc-950 text-white p-6 flex flex-col justify-between">
-      
-      {/* Top */}
-      <div>
-        <h1 className="text-lg font-semibold mb-8">Super Finti</h1>
+    <div className="w-64 h-full bg-black text-white p-6 flex flex-col">
 
-        <div>
-          <p className="text-zinc-500 uppercase text-xs mb-4">Main</p>
+      <h1 className="text-xl font-semibold mb-8">Super Finti</h1>
 
-          <div className="space-y-2">
-            {menu.map((item, index) => {
-              const Icon = item.icon;
+      <div className="text-xs text-zinc-500 mb-4">MAIN</div>
 
-              return (
-                <div
-                  key={index}
-                  className="
-                    flex items-center gap-3 px-3 py-2 rounded-lg 
-                    text-zinc-400 cursor-pointer
-                    transition-all duration-200
+      <div className="space-y-4">
 
-                    hover:bg-zinc-800 
-                    hover:text-white
-                  "
-                >
-                  <Icon size={18} />
-                  <span className="text-sm">{item.name}</span>
-                </div>
-              );
-            })}
-          </div>
+        <div className="flex items-center gap-3 text-zinc-300 hover:text-white cursor-pointer">
+          <LayoutDashboard size={18} />
+          <span>Dashboard</span>
         </div>
+
+        <div className="flex items-center gap-3 text-zinc-300 hover:text-white cursor-pointer">
+          <ArrowLeftRight size={18} />
+          <span>Transactions</span>
+        </div>
+
+        <div className="flex items-center gap-3 text-zinc-300 hover:text-white cursor-pointer">
+          <Users size={18} />
+          <span>Contacts</span>
+        </div>
+
+        <div className="flex items-center gap-3 text-zinc-300 hover:text-white cursor-pointer">
+          <Sparkles size={18} />
+          <span>Features</span>
+        </div>
+
       </div>
 
-      {/* Bottom Card */}
-      <div className="bg-gradient-to-br from-orange-400 to-yellow-300 p-4 rounded-xl text-black">
-        <p className="font-semibold mb-2">Help Center</p>
-        <button className="bg-white px-3 py-1 rounded text-sm">
+      {/* Spacer */}
+      <div className="flex-1"></div>
+
+      {/* Help Card */}
+      <div className="bg-yellow-400 text-black p-4 rounded-xl mt-6">
+        <p className="font-semibold">Help Center</p>
+        <button className="mt-2 bg-white px-3 py-1 rounded text-sm">
           Go
         </button>
       </div>
