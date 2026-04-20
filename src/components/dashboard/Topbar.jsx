@@ -1,18 +1,29 @@
 function Topbar() {
   return (
-    <div className="flex items-center justify-between px-6 py-4 text-white">
-      
-      <input
-        placeholder="Search..."
-        className="bg-white/10 backdrop-blur-md px-4 py-2 rounded-md outline-none text-sm placeholder-zinc-300"
-      />
+    <div className="flex items-center justify-between p-4 gap-3 text-white">
 
-      <div className="flex items-center gap-6 text-sm">
-        <span className="cursor-pointer hover:opacity-80">Wallet</span>
-        <span className="cursor-pointer hover:opacity-80">Invoices</span>
-
-        <div className="w-8 h-8 rounded-full bg-gradient-to-r from-purple-400 to-pink-400"></div>
+      {/* LEFT - Search */}
+      <div className="flex-1">
+        <input
+          type="text"
+          placeholder="Search..."
+          className="
+            w-full md:w-64
+            px-4 py-2 rounded-lg 
+            bg-zinc-800 text-sm text-white
+            focus:outline-none
+          "
+        />
       </div>
+
+      {/* RIGHT - Actions */}
+      <div className="flex items-center gap-3 shrink-0">
+        <span className="hidden sm:block">Wallet</span>
+        <span className="hidden sm:block">Invoices</span>
+
+        <div className="w-8 h-8 rounded-full bg-gradient-to-r from-pink-500 to-purple-500"></div>
+      </div>
+
     </div>
   );
 }
