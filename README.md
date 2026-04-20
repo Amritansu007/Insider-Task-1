@@ -1,16 +1,74 @@
-# React + Vite
+# SRM Insider First Task (React + Vite + Tailwind)
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A modern, responsive SaaS-style web application built using **React (Vite)** and **Tailwind CSS**, featuring:
 
-Currently, two official plugins are available:
+- 🔐 Authentication UI (Login / Signup)
+- 📊 Dashboard with cards, charts, and transactions
+- 🌐 Landing page with hero + features
+- 📱 Fully responsive design (mobile + desktop)
+- ⚡ Fast deployment on Vercel
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+---
 
-## React Compiler
+## 📸 Features
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+### ✨ Landing Page
+- Clean hero section
+- Call-to-action buttons
+- Feature highlights with icons
 
-## Expanding the ESLint configuration
+### 🔐 Auth Page
+- Signup & Login toggle
+- Password visibility toggle
+- Social login buttons
+- Modern split layout with image
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+### 📊 Dashboard
+- Sidebar navigation (responsive with hamburger menu)
+- Topbar with search + profile
+- Credit card UI
+- Stats cards
+- Activity chart
+- Transactions list
+
+---
+
+## 🛠 Tech Stack
+
+- **React (Vite)**
+- **Tailwind CSS**
+- **React Router DOM**
+- **Lucide Icons**
+- **Vercel (Deployment)**
+
+---
+
+## 📁 Project Structure
+src/
+│
+├── components/
+│ ├── auth/
+│ ├── dashboard/
+│ └── landing/
+│
+├── pages/
+│ ├── Auth.jsx
+│ ├── Dashboard.jsx
+│ └── Landing.jsx
+│
+├── App.jsx
+└── main.jsx
+
+---
+📱 Responsive Design
+Mobile-friendly layouts
+Collapsible sidebar (hamburger menu)
+Adaptive topbar (search + icons)
+Optimized spacing & scaling
+
+🎯 Future Improvements
+🔑 Authentication (Firebase / JWT)
+📊 Real charts (Recharts / Chart.js)
+🌙 Dark/Light mode toggle
+🔔 Notifications system
+🧑 User profile settings
