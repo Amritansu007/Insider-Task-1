@@ -25,7 +25,7 @@ function Hero() {
       </div>
 
       {/* RIGHT */}
-      <div className="flex items-center justify-center lg:justify-end">
+      <div className="hidden lg:flex items-center justify-end">
 
         <div className="relative w-72 h-72">
 

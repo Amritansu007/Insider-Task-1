@@ -7,13 +7,13 @@ import MiniChart from "../components/dashboard/MiniChart";
 
 function Dashboard() {
   return (
-    <div className="flex min-h-screen bg-zinc-900 text-white">
+    <div className="flex min-h-screen bg-zinc-900 text-white overflow-x-hidden">
       
       {/* Sidebar */}
       <Sidebar />
 
       {/* Main Content */}
-      <div className="flex-1 flex flex-col">
+      <div className="flex-1 flex flex-col overflow-y-auto">
 
         {/* Gradient Header */}
         <div className="bg-gradient-to-r from-indigo-700 via-purple-700 to-pink-600 rounded-b-3xl">
